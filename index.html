@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de página web</title>
+	<style>
+		h1 {
+			color: red;
+			font-size: 36px;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 2;
+		}
+
+		ul {
+			list-style-type: none;
+		}
+
+		li {
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Bem-vindo à minha página web</h1>
+	<p>Esta é uma página de exemplo.</p>
+	<p>Ela também possui um código JavaScript de mudança de cor!</p>
+	<p>Tecnologias usadas:</p>
+	<img src="imagem.jpg" alt="Imagem de exemplo">
+	<ul>
+		<li>HTML 5</li>
+		<li>CSS 3</li>
+		<li>JavaScript</li>
+	</ul>
+	<script>
+		function mudarCor() {
+			document.querySelector("h1").style.color = "blue";
+		}
+		document.querySelector("img").addEventListener("click", mudarCor);
+	</script>
+</body>
+</html>
